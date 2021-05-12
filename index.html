@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+
+<body>
+    <div class="w-75 m-auto py-4">
+
+        <div class="form-group">
+            <label for="productName">productName :</label>
+            <input type="text" class="form-control" id="productName">
+
+        </div>
+   
+        <div class="form-group">
+            <label for="productPrice">productPrice :</label>
+            <input type="number" class="form-control" id="productPrice">
+
+        </div>
+
+        <div class="form-group">
+            <label for="productCategory">productCategory :</label>
+            <input   type="text" class="form-control" id="productCategory">
+
+        </div>
+
+        <div class="form-group">
+            <label for="productDesc">productDesc :</label>
+            <textarea style="resize: none;" type="text" class="form-control" id="productDesc"></textarea>
+
+        </div>
+
+        <button onclick="addProudct()" class="btn btn-outline-info">Add Product</button>
+        <button class="btn btn-outline-secondary" id="saveProduct" onclick="saveEdit()" style="display: none;">Save Edit</button>
+
+    </div>
+        <div class="w-50 m-auto p-5 ">
+            <input onkeyup="searchProduct(this.value)" type="text" class="form-control" placeholder="Search" >
+        </div>
+    <table class="table w-75 m-auto" id="tbody-row">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Cat</th>
+            <th scope="col">Des</th>
+            <th scope="col">Update</th>
+            <th scope="col">delete</th>
+
+
+
+          </tr>
+        </thead>
+        <tbody class="tableBody">
+
+        </tbody>
+      </table>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
